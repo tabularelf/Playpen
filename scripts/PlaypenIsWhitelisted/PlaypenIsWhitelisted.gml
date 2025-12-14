@@ -38,7 +38,7 @@ function PlaypenIsWhitelisted(_path) {
 	}
 
 	// Blacklist check
-	if (__PLAYPEN_USE_BLACKLIST) {
+	if (__PLAYPEN_USE_BLACKLIST) && (!__PLAYPEN_ON_WINDOWS) {
 		_index = array_find_index(_global.blacklist, _callback);
     	
 		if (_index == -1) {
