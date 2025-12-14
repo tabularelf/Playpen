@@ -1,10 +1,7 @@
 function __PlaypenBlackList() {
 	static _list = [
 		// Linux
-		"/bin",
 		"/boot",
-		"/dev",
-		"/etc",
 		"/home",
 		"/lib",
 		"/lib64",
@@ -27,13 +24,15 @@ function __PlaypenBlackList() {
 		"/System",
 		"/Users",
 		"/Volumes",
-		"/bin",
 		"/cores",
-		"/dev",
-		"/etc",
 		"/home",
 		"/private",
 		"/sbin",
+
+		// common (both)
+		"/bin",
+		"/dev",
+		"/etc",
 		"/tmp",
 		"/usr",
 		"/var",
