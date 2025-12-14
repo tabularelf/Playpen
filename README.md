@@ -23,7 +23,7 @@ if (!buffer_exists(buff)) {
   show_error("File failed to load!", true);
 }
 
-var _str = buffer_read(buff);
+var _str = buffer_read(buff, buffer_text);
 show_message(_str);
 buffer_delete(_buff);
 ```
