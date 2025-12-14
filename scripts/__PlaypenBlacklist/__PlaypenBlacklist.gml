@@ -11,7 +11,6 @@ function __PlaypenBlackList() {
 		"/proc",
 		"/root",
 		"/run",
-		"/sbin",
 		"/srv",
 		"/sys",
 		"/tmp",
@@ -25,12 +24,12 @@ function __PlaypenBlackList() {
 		"/cores",
 		"/home",
 		"/private",
-		"/sbin",
 
 		// common (both)
 		"/bin",
 		"/dev",
 		"/etc",
+		"/sbin",
 		"/tmp",
 		"/usr",
 		"/var",
