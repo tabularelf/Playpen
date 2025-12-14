@@ -7,7 +7,6 @@
 function __PlaypenSystem() {
 	static _global = {
 		whitelist: [],
-		blacklist: __PlaypenBlackList(),
 	};
 	
 	return _global;

@@ -20,7 +20,7 @@ function PlaypenIsWhitelisted(_path) {
 		return true;
 	}
 
-	if (string_pos("\\\\", _path) == 0) && (string_pos(":", _path) == 0) && (string_pos("/", _path) == 0) {
+	if (string_pos("\\\\", _path) == 0) && (string_pos(":", _path) == 0) && (!string_starts_with("/", _path)) {
 		// Probably in "safe" save area or bundle area... Allow it.
 		return true;
 	}
@@ -35,15 +35,6 @@ function PlaypenIsWhitelisted(_path) {
 
 	if (_index != -1) {
 		return true;
-	}
-
-	// Blacklist check
-	if (__PLAYPEN_USE_BLACKLIST) && (!__PLAYPEN_ON_WINDOWS) {
-		_index = array_find_index(_global.blacklist, _callback);
-    	
-		if (_index == -1) {
-			return true;
-		}
 	}
 
 	return false;
