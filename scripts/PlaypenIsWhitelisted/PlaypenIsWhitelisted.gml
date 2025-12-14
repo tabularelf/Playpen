@@ -38,10 +38,12 @@ function PlaypenIsWhitelisted(_path) {
 	}
 
 	// Blacklist check
-	_index = array_find_index(_global.blacklist, _callback);
-
-	if (_index == -1) {
-		return true;
+	if (__PLAYPEN_USE_BLACKLIST) {
+		_index = array_find_index(_global.blacklist, _callback);
+    	
+		if (_index == -1) {
+			return true;
+		}
 	}
 
 	return false;
