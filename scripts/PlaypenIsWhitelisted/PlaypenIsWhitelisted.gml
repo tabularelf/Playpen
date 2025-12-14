@@ -25,11 +25,22 @@ function PlaypenIsWhitelisted(_path) {
 		return true;
 	}
 
+	// Make sure that it isn't the root directory
+	if (_path == "/") {
+		return false;
+	}
+
 	_ctx.path = _path;
 	var _index = array_find_index(_global.whitelist, _callback);
-	_ctx.path = "";
 
 	if (_index != -1) {
+		return true;
+	}
+
+	// Blacklist check
+	_index = array_find_index(_global.blacklist, _callback);
+
+	if (_index == -1) {
 		return true;
 	}
 

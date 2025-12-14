@@ -27,6 +27,7 @@
   "resources":[
     {"id":{"name":"obj_test","path":"objects/obj_test/obj_test.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"__PlaypenBlacklist","path":"scripts/__PlaypenBlacklist/__PlaypenBlacklist.yy",},},
     {"id":{"name":"__PlaypenConfig","path":"scripts/__PlaypenConfig/__PlaypenConfig.yy",},},
     {"id":{"name":"__PlaypenSanitise","path":"scripts/__PlaypenSanitise/__PlaypenSanitise.yy",},},
     {"id":{"name":"__PlaypenSystem","path":"scripts/__PlaypenSystem/__PlaypenSystem.yy",},},
