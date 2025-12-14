@@ -6,6 +6,7 @@ PlaypenWhitelistAdd(filepath) - Adds a filepath to the whitelist
 PlaypenWhitelistGetAll() - Returns an array of all filepaths accepted
 PlaypenWhitelistClear() - Clears the whitelist
 PlaypenWhitelistRemove(filepath) - Removes a filepath from the whitelist
+PlaypenIsWhitelisted(filepath) - Returns whether the filepath in question is apart of the whitelist or not.
 ```
 
 Example use:
