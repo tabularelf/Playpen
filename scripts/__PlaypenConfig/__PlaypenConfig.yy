@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__PlaypenConfig",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__PlaypenConfig",
+  "parent":{
+    "name":"Playpen",
+    "path":"folders/Playpen.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

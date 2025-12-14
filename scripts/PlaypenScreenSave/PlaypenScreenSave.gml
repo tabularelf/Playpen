@@ -1,0 +1,16 @@
+function PlaypenScreenSave(_filepath) {
+	if (GM_is_sandboxed) {
+		return screen_save(_filepath);
+	}
+
+	if (PlaypenIsWhitelisted(_filepath)) {
+		return screen_save(_filepath);
+	}
+
+	__PlaypenTrace($"{nameof(PlaypenScreenSave)} - \"{_filepath}\" is not whitelisted!");
+
+	if (__PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR) {
+		__PlaypenTrace($"{nameof(PlaypenScreenSave)} - Attempting to save at \"{game_save_id + _filepath}\".");
+		return screen_save(game_save_id + _filepath);
+	}
+}

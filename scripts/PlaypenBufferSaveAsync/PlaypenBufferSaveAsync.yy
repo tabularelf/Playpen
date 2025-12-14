@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"PlaypenBufferSaveAsync",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PlaypenBufferSaveAsync",
+  "parent":{
+    "name":"Playpen",
+    "path":"folders/Playpen.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

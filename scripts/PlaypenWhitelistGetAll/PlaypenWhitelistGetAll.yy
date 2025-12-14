@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"PlaypenWhitelistGetAll",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PlaypenWhitelistGetAll",
+  "parent":{
+    "name":"Playpen",
+    "path":"folders/Playpen.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
