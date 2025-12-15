@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"PlaypenZipUnzip",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PlaypenZipUnzip",
+  "parent":{
+    "name":"Playpen",
+    "path":"folders/Playpen.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,3 +1,6 @@
+/// @desc Function Description
+/// @param {id.buffer} buff Description
+/// @param {string} filepath Description
 function PlaypenBufferSave(_buff, _filepath) {
 	if (GM_is_sandboxed) {
 		return buffer_save(_buff, _filepath);

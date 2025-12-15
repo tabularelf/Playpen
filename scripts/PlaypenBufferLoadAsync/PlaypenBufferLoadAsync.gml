@@ -1,3 +1,9 @@
+/// @desc Function Description
+/// @param {id.buffer} buff Description
+/// @param {string} filepath Description
+/// @param {real} offset Description
+/// @param {real} size Description
+/// @returns {real} Description
 function PlaypenBufferLoadAsync(_buff, _filepath, _offset, _size) {
 	if (GM_is_sandboxed) {
 		return buffer_load_async(_buff, _filepath, _offset, _size);

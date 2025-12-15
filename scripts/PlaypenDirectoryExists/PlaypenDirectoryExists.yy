@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"PlaypenDirectoryExists",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PlaypenDirectoryExists",
+  "parent":{
+    "name":"Playpen",
+    "path":"folders/Playpen.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

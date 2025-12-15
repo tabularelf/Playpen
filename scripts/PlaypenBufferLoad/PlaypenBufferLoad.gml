@@ -1,3 +1,5 @@
+/// @desc Function Description
+/// @param {string} filepath Description
 function PlaypenBufferLoad(_filepath) {
 	if (GM_is_sandboxed) {
 		return buffer_load(_filepath);
@@ -13,5 +15,5 @@ function PlaypenBufferLoad(_filepath) {
 		__PlaypenTrace($"{nameof(PlaypenBufferLoad)} - Attempting to load from save & bundle area.");
 		return buffer_load(working_directory + _filepath);
 	}
-	return -1;
+	return handle_parse("ref buffer -1");
 }

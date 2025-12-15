@@ -1,3 +1,5 @@
+// feather ignore all
+/// @ignore
 function __PlaypenSanitise(_path) {
 	if (__PLAYPEN_ON_WINDOWS) {
 		_path = string_replace_all(_path, "/", "\\");

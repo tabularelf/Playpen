@@ -1,3 +1,7 @@
+/// @desc Function Description
+/// @param {id.surface} surf Description
+/// @param {string} filepath Description
+/// @returns {real} Description
 function PlaypenSurfaceSave(_surf, _filepath) {
 	if (GM_is_sandboxed) {
 		return surface_save(_surf, _filepath);

@@ -1,3 +1,7 @@
+/// @desc Function Description
+/// @param {id.buffer} buff Description
+/// @param {string} filepath Description
+/// @param {real} offset Description
 function PlaypenBufferLoadExt(_buff, _filepath, _offset) {
 	if (GM_is_sandboxed) {
 		return buffer_load_ext(_buff, _filepath, _offset);

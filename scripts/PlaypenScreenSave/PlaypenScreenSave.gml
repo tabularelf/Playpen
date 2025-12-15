@@ -1,3 +1,5 @@
+/// @desc Function Description
+/// @param {string} filepath Description
 function PlaypenScreenSave(_filepath) {
 	if (GM_is_sandboxed) {
 		return screen_save(_filepath);

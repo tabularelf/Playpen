@@ -1,3 +1,9 @@
+/// @desc Function Description
+/// @param {string} filepath Description
+/// @param {real} imgNum Description
+/// @param {real} xorig Description
+/// @param {real} yorig Description
+/// @param {bool} prefetch Description
 function PlaypenSpriteAddExt(_filepath, _imgNum, _xorig, _yorig, _prefetch) {
 	if (GM_is_sandboxed) {
 		return sprite_add_ext(_filepath, _imgNum, _xorig, _yorig, _prefetch);

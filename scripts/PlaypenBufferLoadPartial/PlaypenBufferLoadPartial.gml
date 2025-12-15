@@ -1,3 +1,10 @@
+/// @desc Function Description
+/// @param {id.buffer} buff Description
+/// @param {string} filepath Description
+/// @param {real} srcOffset Description
+/// @param {real} srcLen Description
+/// @param {real} destOffset Description
+/// @returns {real} Description
 function PlaypenBufferLoadPartial(_buff, _filepath, _srcOffset, _srcLen, _destOffset) {
 	if (GM_is_sandboxed) {
 		return buffer_load_partial(_buff, _filepath, _srcOffset, _srcLen, _destOffset);

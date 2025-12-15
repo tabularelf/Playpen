@@ -1,3 +1,6 @@
+/// @desc Function Description
+/// @param {string} path Description
+/// @return {Enum.PlaypenFlag}
 function PlaypenWhitelistGetFlag(_path) {
 	static _global = __PlaypenSystem();
 	_path = __PlaypenSanitise((_path));
@@ -8,8 +11,7 @@ function PlaypenWhitelistGetFlag(_path) {
 	});
 
 	if (_index == -1) {
-		// TODO: Add Error
-		return 0;
+		return PlaypenFlag.INVALID;
 	}
 
 	return _global.whitelist[_index].type;

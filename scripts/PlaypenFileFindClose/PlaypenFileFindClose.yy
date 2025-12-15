@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"PlaypenFileFindClose",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PlaypenFileFindClose",
+  "parent":{
+    "name":"Playpen",
+    "path":"folders/Playpen.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

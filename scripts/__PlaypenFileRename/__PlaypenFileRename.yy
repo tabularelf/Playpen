@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__PlaypenFileRename",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__PlaypenFileRename",
+  "parent":{
+    "name":"(System)",
+    "path":"folders/Playpen/(System).yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

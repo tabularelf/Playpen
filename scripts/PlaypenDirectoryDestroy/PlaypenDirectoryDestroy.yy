@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"PlaypenDirectoryDestroy",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PlaypenDirectoryDestroy",
+  "parent":{
+    "name":"Playpen",
+    "path":"folders/Playpen.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

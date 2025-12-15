@@ -1,3 +1,7 @@
+/// @desc Function Description
+/// @param {string} path Description
+/// @param {any*} type Description
+/// @returns {bool} Description
 function PlaypenIsWhitelisted(_path, _type) {
 	static _global = __PlaypenSystem();
 	static _ctx = {
@@ -9,6 +13,8 @@ function PlaypenIsWhitelisted(_path, _type) {
 		return ((_elm.type == PlaypenFlag.BOTH) || (_elm.type == type)) && 
 				string_starts_with(path, _elm.path);
 	});
+
+	__PlaypenTypeValidation(nameof(PlaypenIsWhitelisted), _type);
 
 	_path = __PlaypenSanitise(_path);
 

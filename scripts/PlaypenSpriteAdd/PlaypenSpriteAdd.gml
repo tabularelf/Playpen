@@ -1,3 +1,10 @@
+/// @desc Function Description
+/// @param {string} filepath Description
+/// @param {real} imgNum Description
+/// @param {bool} removeBack Description
+/// @param {bool} smooth Description
+/// @param {real} xorig Description
+/// @param {real} yorig Description
 function PlaypenSpriteAdd(_filepath, _imgNum, _removeBack, _smooth, _xorig, _yorig) {
 	if (GM_is_sandboxed) {
 		return sprite_add(_filepath, _imgNum, _removeBack, _smooth, _xorig, _yorig);

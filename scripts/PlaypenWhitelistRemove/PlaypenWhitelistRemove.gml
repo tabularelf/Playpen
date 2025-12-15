@@ -1,3 +1,5 @@
+/// @desc Function Description
+/// @param {string} path Description
 function PlaypenWhitelistRemove(_path) {
 	static _global = __PlaypenSystem();
 	var _index;

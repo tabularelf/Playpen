@@ -1,10 +1,14 @@
+/// @desc Function Description
+/// @param {string} filepath Description
+/// @param {string} newFilepath Description
+/// @returns {bool} Description
 function PlaypenFileRename(_filepath, _newFilepath) {
 	if (GM_is_sandboxed) {
-		return file_copy(_filepath, _newFilepath);
+		return __PlaypenFileRename(_filepath, _newFilepath);
 	}
 
 	if (PlaypenIsWhitelisted(_filepath, PlaypenFlag.WRITE)) {
-		return file_rename(_filepath, _newFilepath);
+		return __PlaypenFileRename(_filepath, _newFilepath);
 	}
 
 	
