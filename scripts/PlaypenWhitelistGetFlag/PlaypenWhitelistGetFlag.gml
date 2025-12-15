@@ -9,7 +9,7 @@ function PlaypenWhitelistGetFlag(_path) {
 
 	if (_index == -1) {
 		// TODO: Add Error
-		return;;
+		return 0;
 	}
 
 	return _global.whitelist[_index].type;

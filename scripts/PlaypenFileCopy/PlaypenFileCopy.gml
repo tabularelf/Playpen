@@ -3,8 +3,8 @@ function PlaypenFileCopy(_filepath, _newFilepath) {
 		return file_copy(_filepath, _newFilepath);
 	}
 
-	var _filepathValidated = PlaypenIsWhitelisted(_filepath);
-	var _newFilepathValidated = PlaypenIsWhitelisted(_newFilepath);
+	var _filepathValidated = PlaypenIsWhitelisted(_filepath, PlaypenFlag.READ);
+	var _newFilepathValidated = PlaypenIsWhitelisted(_newFilepath, PlaypenFlag.WRITE);
 
 	if (_filepathValidated && _newFilepathValidated) {
 		return file_copy(_filepath, _newFilepath);

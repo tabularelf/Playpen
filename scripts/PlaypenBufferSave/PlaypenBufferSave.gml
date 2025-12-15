@@ -3,7 +3,7 @@ function PlaypenBufferSave(_buff, _filepath) {
 		return buffer_save(_buff, _filepath);
 	}
 
-	if (PlaypenIsWhitelisted(_filepath)) {
+	if (PlaypenIsWhitelisted(_filepath, PlaypenFlag.WRITE)) {
 		return buffer_save(_buff, _filepath);
 	}
 

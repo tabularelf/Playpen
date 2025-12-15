@@ -3,7 +3,7 @@ function PlaypenSpriteSave(_sprite, _subImg, _filepath) {
 		return sprite_save(_sprite, _subImg, _filepath);
 	}
 
-	if (PlaypenIsWhitelisted(_filepath)) {
+	if (PlaypenIsWhitelisted(_filepath, PlaypenFlag.WRITE)) {
 		return sprite_save(_sprite, _subImg, _filepath);
 	}
 

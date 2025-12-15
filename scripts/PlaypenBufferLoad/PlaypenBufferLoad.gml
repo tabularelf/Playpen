@@ -3,7 +3,7 @@ function PlaypenBufferLoad(_filepath) {
 		return buffer_load(_filepath);
 	}
 
-	if (PlaypenIsWhitelisted(_filepath)) {
+	if (PlaypenIsWhitelisted(_filepath, PlaypenFlag.READ)) {
 		return buffer_load(_filepath);
 	}
 

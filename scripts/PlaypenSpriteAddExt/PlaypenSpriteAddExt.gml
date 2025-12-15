@@ -3,7 +3,7 @@ function PlaypenSpriteAddExt(_filepath, _imgNum, _xorig, _yorig, _prefetch) {
 		return sprite_add_ext(_filepath, _imgNum, _xorig, _yorig, _prefetch);
 	}
 
-	if (string_starts_with(_filepath, "data:")) || (PlaypenIsWhitelisted(_filepath)) {
+	if (string_starts_with(_filepath, "data:")) || (PlaypenIsWhitelisted(_filepath, PlaypenFlag.READ)) {
 		return PlaypenSpriteAddExt(_filepath, _imgNum, _xorig, _yorig, _prefetch);
 	}
 

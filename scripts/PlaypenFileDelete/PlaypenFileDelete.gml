@@ -3,7 +3,7 @@ function PlaypenFileDelete(_filepath) {
 		return file_delete(_filepath);
 	}
 
-	if (PlaypenIsWhitelisted(_filepath)) {
+	if (PlaypenIsWhitelisted(_filepath, PlaypenFlag.WRITE)) {
 		return file_delete(_filepath);
 	}
 

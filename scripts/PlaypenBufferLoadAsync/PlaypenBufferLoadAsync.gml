@@ -3,7 +3,7 @@ function PlaypenBufferLoadAsync(_buff, _filepath, _offset, _size) {
 		return buffer_load_async(_buff, _filepath, _offset, _size);
 	}
 
-	if (PlaypenIsWhitelisted(_filepath)) {
+	if (PlaypenIsWhitelisted(_filepath, PlaypenFlag.READ)) {
 		return buffer_load_async(_buff, _filepath, _offset, _size);
 	}
 

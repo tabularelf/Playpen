@@ -3,7 +3,7 @@ function PlaypenScreenSave(_filepath) {
 		return screen_save(_filepath);
 	}
 
-	if (PlaypenIsWhitelisted(_filepath)) {
+	if (PlaypenIsWhitelisted(_filepath, PlaypenFlag.WRITE)) {
 		return screen_save(_filepath);
 	}
 

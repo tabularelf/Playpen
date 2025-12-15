@@ -3,7 +3,7 @@ function PlaypenFileRename(_filepath, _newFilepath) {
 		return file_copy(_filepath, _newFilepath);
 	}
 
-	if (PlaypenIsWhitelisted(_filepath)) {
+	if (PlaypenIsWhitelisted(_filepath, PlaypenFlag.WRITE)) {
 		return file_rename(_filepath, _newFilepath);
 	}
 

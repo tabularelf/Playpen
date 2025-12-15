@@ -3,7 +3,7 @@ function PlaypenHttpGetFile(_url, _filepath) {
 		return http_get_file(_url, _filepath);
 	}
 
-	if (PlaypenIsWhitelisted(_filepath)) {
+	if (PlaypenIsWhitelisted(_filepath, PlaypenFlag.WRITE)) {
 		return http_get_file(_url, _filepath);
 	}
 

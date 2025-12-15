@@ -1,4 +1,4 @@
-function PlaypenIsWhitelisted(_path, _type = PlaypenFlag.BOTH) {
+function PlaypenIsWhitelisted(_path, _type) {
 	static _global = __PlaypenSystem();
 	static _ctx = {
 		path: "",
@@ -6,7 +6,8 @@ function PlaypenIsWhitelisted(_path, _type = PlaypenFlag.BOTH) {
 	};
 
 	static _callback = method(_ctx, function(_elm) {
-		return ((type == PlaypenFlag.BOTH) || (_elm.type == type)) && string_starts_with(path, _elm.path);
+		return ((_elm.type == PlaypenFlag.BOTH) || (_elm.type == type)) && 
+				string_starts_with(path, _elm.path);
 	});
 
 	_path = __PlaypenSanitise(_path);

@@ -3,7 +3,7 @@ function PlaypenBufferLoadExt(_buff, _filepath, _offset) {
 		return buffer_load_ext(_buff, _filepath, _offset);
 	}
 
-	if (PlaypenIsWhitelisted(_filepath)) {
+	if (PlaypenIsWhitelisted(_filepath, PlaypenFlag.READ)) {
 		return buffer_load_ext(_buff, _filepath, _offset);
 	}
 

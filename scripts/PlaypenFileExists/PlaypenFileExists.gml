@@ -7,7 +7,7 @@ function PlaypenFileExists(_filepath) {
 		return file_exists(_filepath);
 	}
 
-	if (PlaypenIsWhitelisted(_filepath)) {
+	if (PlaypenIsWhitelisted(_filepath, PlaypenFlag.READ)) {
 		return file_exists(_filepath);
 	}
 

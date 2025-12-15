@@ -3,7 +3,7 @@ function PlaypenSurfaceSave(_surf, _filepath) {
 		return surface_save(_surf, _filepath);
 	}
 
-	if (PlaypenIsWhitelisted(_filepath)) {
+	if (PlaypenIsWhitelisted(_filepath, PlaypenFlag.WRITE)) {
 		return surface_save(_surf, _filepath);
 	}
 

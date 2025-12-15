@@ -3,7 +3,7 @@ function PlaypenBufferLoadPartial(_buff, _filepath, _srcOffset, _srcLen, _destOf
 		return buffer_load_partial(_buff, _filepath, _srcOffset, _srcLen, _destOffset);
 	}
 
-	if (PlaypenIsWhitelisted(_filepath)) {
+	if (PlaypenIsWhitelisted(_filepath, PlaypenFlag.READ)) {
 		return buffer_load_partial(_buff, _filepath, _srcOffset, _srcLen, _destOffset);
 	}
 
