@@ -4,6 +4,12 @@
 #macro __PLAYPEN_DATE "15/12/2025 4:24 AM"
 #macro __PLAYPEN_CREDITS "@TabularElf - https://tabelf.link/"
 
+enum PlaypenFlag {
+	READ,
+	WRITE,
+	BOTH
+}
+
 function __PlaypenSystem() {
 	static _global = {
 		whitelist: [],

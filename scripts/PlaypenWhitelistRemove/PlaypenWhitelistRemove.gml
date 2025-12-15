@@ -1,6 +1,11 @@
 function PlaypenWhitelistRemove(_path) {
 	static _global = __PlaypenSystem();
-	var _index = array_get_index(_global.whitelist, __PlaypenSanitise(_path));
+	var _index;
+	_path = __PlaypenSanitise(_path);
+	with({_path}) _index = array_find_index(_global.whitelist, function(_elm) {
+		return _elm.path = _path;
+	});
+	
 	if (_index != -1) {
 		array_delete(_global.whitelist, _index, 1);
 	}

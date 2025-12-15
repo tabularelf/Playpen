@@ -1,11 +1,12 @@
-function PlaypenIsWhitelisted(_path) {
+function PlaypenIsWhitelisted(_path, _type = PlaypenFlag.BOTH) {
 	static _global = __PlaypenSystem();
 	static _ctx = {
 		path: "",
+		type: 0,
 	};
 
-	static _callback = method(_ctx, function(_path) {
-		return string_starts_with(path, _path);
+	static _callback = method(_ctx, function(_elm) {
+		return ((type == PlaypenFlag.BOTH) || (_elm.type == type)) && string_starts_with(path, _elm.path);
 	});
 
 	_path = __PlaypenSanitise(_path);
@@ -31,6 +32,7 @@ function PlaypenIsWhitelisted(_path) {
 	}
 
 	_ctx.path = _path;
+	_ctx.type = _type;
 	var _index = array_find_index(_global.whitelist, _callback);
 
 	if (_index != -1) {

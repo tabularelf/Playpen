@@ -51,6 +51,7 @@
     {"id":{"name":"PlaypenWhitelistAdd","path":"scripts/PlaypenWhitelistAdd/PlaypenWhitelistAdd.yy",},},
     {"id":{"name":"PlaypenWhitelistClear","path":"scripts/PlaypenWhitelistClear/PlaypenWhitelistClear.yy",},},
     {"id":{"name":"PlaypenWhitelistGetAll","path":"scripts/PlaypenWhitelistGetAll/PlaypenWhitelistGetAll.yy",},},
+    {"id":{"name":"PlaypenWhitelistGetFlag","path":"scripts/PlaypenWhitelistGetFlag/PlaypenWhitelistGetFlag.yy",},},
     {"id":{"name":"PlaypenWhitelistRemove","path":"scripts/PlaypenWhitelistRemove/PlaypenWhitelistRemove.yy",},},
   ],
   "resourceType":"GMProject",
