@@ -1,6 +1,6 @@
-/// @desc Function Description
-/// @param {string} filepath Description
-/// @param {string} newFilepath Description
+/// @desc This function renames the specified file to the new name.
+/// @param {string} filepath The file you wish to target.
+/// @param {string} newName What you wish to change the name to.
 /// @returns {bool} Description
 function PlaypenFileRename(_filepath, _newFilepath) {
 	if (GM_is_sandboxed) {

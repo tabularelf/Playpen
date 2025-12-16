@@ -1,6 +1,6 @@
-/// @desc Function Description
-/// @param {id.buffer} buff Description
-/// @param {string} filepath Description
+/// @desc Saves a buffer to disk as a file.
+/// @param {id.buffer} buff The buffer to save.
+/// @param {string} filepath The filepath to save the buffer to.
 function PlaypenBufferSave(_buff, _filepath) {
 	if (GM_is_sandboxed) {
 		return buffer_save(_buff, _filepath);

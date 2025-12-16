@@ -1,9 +1,9 @@
-/// @desc Function Description
-/// @param {id.buffer} buff Description
-/// @param {string} filepath Description
-/// @param {real} srcOffset Description
-/// @param {real} srcLen Description
-/// @param {real} destOffset Description
+/// @desc Loads the buffer into memomry from the specified filepath, into the specified buffer.
+/// @param {id.buffer} buff The buffer to load into.
+/// @param {string} filepath The filepath to load from.
+/// @param {real} srcOffset The source offset of the file buffer to read from.
+/// @param {real} srcLen The source length of the file buffer to read to.
+/// @param {real} destOffset The offset of the buffer specified to load into.
 /// @returns {real} Description
 function PlaypenBufferLoadPartial(_buff, _filepath, _srcOffset, _srcLen, _destOffset) {
 	if (GM_is_sandboxed) {

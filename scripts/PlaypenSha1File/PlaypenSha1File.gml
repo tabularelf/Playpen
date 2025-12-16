@@ -1,5 +1,5 @@
-/// @desc Function Description
-/// @param {string} filepath Description
+/// @desc This function will take an input file and return a 160 bit hash value in ASCII format unique to that file to be used for integrity verification at any later date.
+/// @param {string} filepath The file you wish to hash.
 function PlaypenSha1File(_filepath) {
 	if (GM_is_sandboxed) {
 		return sha1_file(_filepath);

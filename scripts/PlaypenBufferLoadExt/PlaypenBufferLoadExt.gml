@@ -1,4 +1,4 @@
-/// @desc Function Description
+/// @desc Loads the buffer into memomry from the specified filepath, into the specified buffer.
 /// @param {id.buffer} buff Description
 /// @param {string} filepath Description
 /// @param {real} offset Description

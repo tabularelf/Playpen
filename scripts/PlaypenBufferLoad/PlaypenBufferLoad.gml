@@ -1,5 +1,5 @@
-/// @desc Function Description
-/// @param {string} filepath Description
+/// @desc Loads the buffer into memomry from the specified filepath.
+/// @param {string} filepath The filepath to load from.
 function PlaypenBufferLoad(_filepath) {
 	if (GM_is_sandboxed) {
 		return buffer_load(_filepath);

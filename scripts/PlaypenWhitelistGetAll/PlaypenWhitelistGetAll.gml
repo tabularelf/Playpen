@@ -1,4 +1,4 @@
-/// @desc Function Description
+/// @desc Returns all of the currently whitelisted filepaths.
 /// @return {Array<String>}
 function PlaypenWhitelistGetAll() {
 	static _global = __PlaypenSystem();

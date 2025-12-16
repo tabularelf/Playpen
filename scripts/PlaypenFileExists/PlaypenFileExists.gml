@@ -1,6 +1,6 @@
 // feather ignore all
 /// @desc Returns whether a file exists or not, depending on the whitelist & sandbox rules.
-/// @param {String} filepath The filepath to check
+/// @param {String} filepath The filepath to check.
 /// @returns {Bool} 
 function PlaypenFileExists(_filepath) {
 	if (GM_is_sandboxed) {

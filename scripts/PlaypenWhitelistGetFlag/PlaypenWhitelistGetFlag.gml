@@ -1,5 +1,5 @@
-/// @desc Function Description
-/// @param {string} path Description
+/// @desc Returns the type of flag that the filepath is currently assigned. If the filepath cannot be found, it'll return `PlaypenFlag.INVALID`.
+/// @param {string} filepath The file to fetch the type flag.
 /// @return {Enum.PlaypenFlag}
 function PlaypenWhitelistGetFlag(_path) {
 	static _global = __PlaypenSystem();

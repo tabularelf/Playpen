@@ -1,9 +1,9 @@
-/// @desc Function Description
-/// @param {string} filepath Description
-/// @param {real} imgNum Description
-/// @param {real} xorig Description
-/// @param {real} yorig Description
-/// @param {bool} prefetch Description
+/// @desc Adds a image from disk or the web as a sprite. Fires off an async event.
+/// @param {string} filepath The image to load from
+/// @param {real} imgNum The number of frames this sprite has.
+/// @param {real} xorig The x origin of the sprite.
+/// @param {real} yorig The y origin of the sprite.
+/// @param {bool} prefetch Whether the sprite should be loaded into GPU memory from the getgo.
 function PlaypenSpriteAddExt(_filepath, _imgNum, _xorig, _yorig, _prefetch) {
 	if (GM_is_sandboxed) {
 		return sprite_add_ext(_filepath, _imgNum, _xorig, _yorig, _prefetch);

@@ -1,5 +1,5 @@
-/// @desc Function Description
-/// @param {String} filepath Description
+/// @desc Destroys a specified directory.
+/// @param {String} filepath The filepath directory to destroy.
 function PlaypenDirectoryDestroy(_filepath) {
 	if (GM_is_sandboxed) {
 		return directory_destroy(_filepath);

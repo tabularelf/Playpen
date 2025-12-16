@@ -1,7 +1,11 @@
-/// @desc Function Description
-/// @param {string} path Description
-/// @param {any*} type Description
-/// @returns {bool} Description
+/// @desc This function checks whether the filepath or file is apart of the whitelist or not.
+/// The following flags that can be passed and how they behave are:
+/// `PlaypenFlag.READ` - Only searches for filepaths that are marked as `PlaypenFlag.READ` or `PlaypenFlag.BOTH`
+/// `PlaypenFlag.WRITE` - Only searches for filepaths that are marked as `PlaypenFlag.WRITE` or `PlaypenFlag.BOTH`
+/// `PlaypenFlag.BOTH` - Only searches for filepaths that are marked as `PlaypenFlag.BOTH`
+/// @param {String} path The filepath to check.
+/// @param {Enum.PlaypenFlag} type The type to look for.
+/// @returns {Bool} 
 function PlaypenIsWhitelisted(_path, _type) {
 	static _global = __PlaypenSystem();
 	static _ctx = {

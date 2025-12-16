@@ -1,7 +1,7 @@
-/// @desc Function Description
-/// @param {String} filepath Description
-/// @param {String} newFilepath Description
-/// @return {Real}
+/// @desc This function will copy the specified file, to a separate location.
+/// @param {String} filepath The file to copy from
+/// @param {String} newFilepath The file to copy to
+/// @return {Bool}
 function PlaypenFileCopy(_filepath, _newFilepath) {
 	if (GM_is_sandboxed) {
 		return __PlaypenFileCopy(_filepath, _newFilepath);
@@ -30,5 +30,5 @@ function PlaypenFileCopy(_filepath, _newFilepath) {
 		);
 	}
 
-	return -1;
+	return false;
 }

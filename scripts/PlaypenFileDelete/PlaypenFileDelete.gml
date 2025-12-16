@@ -1,6 +1,6 @@
-/// @desc Function Description
-/// @param {string} filepath Description
-/// @returns {bool} Description
+/// @desc This function will delete the specified file.
+/// @param {string} filepath The file you wish to delete.
+/// @returns {bool} 
 function PlaypenFileDelete(_filepath) {
 	if (GM_is_sandboxed) {
 		return __PlaypenFileDelete(_filepath);

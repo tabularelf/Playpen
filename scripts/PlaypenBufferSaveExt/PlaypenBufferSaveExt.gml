@@ -1,8 +1,8 @@
-/// @desc Function Description
-/// @param {id.buffer} buff Description
-/// @param {string} filepath Description
-/// @param {real} offset Description
-/// @param {real} size Description
+/// @desc Saves a buffer to disk as a file.
+/// @param {id.buffer} buff The buffer to save.
+/// @param {string} filepath The filepath to save the buffer to.
+/// @param {real} offset The offset of the buffer.
+/// @param {real} size The size of the buffer.
 function PlaypenBufferSaveExt(_buff, _filepath, _offset, _size) {
 	if (GM_is_sandboxed) {
 		return buffer_save_ext(_buff, _filepath, _offset, _size);

@@ -1,5 +1,5 @@
-/// @desc Function Description
-/// @param {string} filepath Description
+/// @desc Takes a screenshot of the game and saves it to disk.
+/// @param {string} filepath The filepath to save it to.
 function PlaypenScreenSave(_filepath) {
 	if (GM_is_sandboxed) {
 		return screen_save(_filepath);

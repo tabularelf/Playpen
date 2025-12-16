@@ -1,6 +1,6 @@
-/// @desc Function Description
-/// @param {string} filepath Description
-/// @returns {bool} Description
+/// @desc Returns whether a directory exists or not at the specified filepath.
+/// @param {string} filepath The filepath directory to check.
+/// @returns {bool} 
 function PlaypenDirectoryExists(_filepath) {
 	if (GM_is_sandboxed) {
 		return directory_exists(_filepath);

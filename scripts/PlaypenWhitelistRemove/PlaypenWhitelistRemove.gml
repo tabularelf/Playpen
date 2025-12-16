@@ -1,5 +1,5 @@
-/// @desc Function Description
-/// @param {string} path Description
+/// @desc Removes the specified filepath from the whitelist.
+/// @param {string} filepath The filepath you wish to remove from the whitelist.
 function PlaypenWhitelistRemove(_path) {
 	static _global = __PlaypenSystem();
 	var _index;

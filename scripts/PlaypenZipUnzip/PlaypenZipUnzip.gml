@@ -1,6 +1,6 @@
-/// @desc Function Description
-/// @param {string} zipPath Description
-/// @param {string} filepath Description
+/// @desc This function will open a stored zip file and extract its contents to the given directory.
+/// @param {string} zipPath The path to the zip file.
+/// @param {string} filepath The destination to the filepath.
 /// @returns {real} 
 function PlaypenZipUnzip(_zipPath, _filepath) {
 	if (GM_is_sandboxed) {
@@ -24,6 +24,9 @@ function PlaypenZipUnzip(_zipPath, _filepath) {
 
 	if (__PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR) {
 		__PlaypenTrace($"{nameof(PlaypenZipUnzip)} - Attempting to unzip from {working_directory + _zipPath} to \"{game_save_id + _filepath}\".");
-		return zip_unzip(working_directory + _zipPath, game_save_id + _filepath);
+		return zip_unzip(
+			_filepathValidated ? _zipPath : working_directory + _zipPath, 
+			_newFilepathValidated ? _filepath : game_save_id + _filepath
+		);
 	}
 }

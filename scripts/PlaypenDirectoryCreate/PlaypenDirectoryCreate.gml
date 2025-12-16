@@ -1,5 +1,5 @@
-/// @desc Function Description
-/// @param {string} filepath Description
+/// @desc Creates a new directory.
+/// @param {string} filepath The filepath to create the new directory.
 /// @return {Bool}
 function PlaypenDirectoryCreate(_filepath) {
 	if (GM_is_sandboxed) {

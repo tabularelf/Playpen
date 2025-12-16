@@ -1,7 +1,7 @@
-/// @desc Function Description
-/// @param {asset.gmsprite} sprite Description
-/// @param {real} subImg Description
-/// @param {string} filepath Description
+/// @desc This saves the current sprite with the specified sub image, to the specified filepath.
+/// @param {asset.gmsprite} sprite Sprite to save.
+/// @param {real} subImg Sprite image index to save.
+/// @param {string} filepath The filepath to save at.
 function PlaypenSpriteSave(_sprite, _subImg, _filepath) {
 	if (GM_is_sandboxed) {
 		return sprite_save(_sprite, _subImg, _filepath);

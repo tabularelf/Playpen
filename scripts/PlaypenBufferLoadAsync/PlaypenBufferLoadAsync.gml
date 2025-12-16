@@ -1,8 +1,8 @@
-/// @desc Function Description
-/// @param {id.buffer} buff Description
-/// @param {string} filepath Description
-/// @param {real} offset Description
-/// @param {real} size Description
+/// @desc Loads the buffer into memomry asynchronously from the specified filepath, into the specified buffer.
+/// @param {id.buffer} buff The target buffer to load into.
+/// @param {string} filepath The filepath you wish to load from.
+/// @param {real} offset The offset of where to load to in the buffer.
+/// @param {real} size The size of the data you wish to load.
 /// @returns {real} Description
 function PlaypenBufferLoadAsync(_buff, _filepath, _offset, _size) {
 	if (GM_is_sandboxed) {

@@ -1,7 +1,7 @@
-/// @desc Function Description
-/// @param {string} url Description
-/// @param {string} filepath Description
-/// @returns {real} Description
+/// @desc This function connects to the specified URL in order to retrieve information in the form of a file.
+/// @param {String} url The web address of the server you wish to get the file from.
+/// @param {String} filepath The local storage path to save to.
+/// @returns {Real} 
 function PlaypenHttpGetFile(_url, _filepath) {
 	if (GM_is_sandboxed) {
 		return http_get_file(_url, _filepath);

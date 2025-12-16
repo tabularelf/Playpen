@@ -1,6 +1,6 @@
 /// @desc Adds a filepath to the whitelist
-/// @param {string} path Description
-/// @param {real} type Description
+/// @param {string} filepath The path you wish to whitelist.
+/// @param {real} type The type of whitelist. Default is `PlaypenFlag.BOTH`.
 function PlaypenWhitelistAdd(_path, _type = PlaypenFlag.BOTH) {
 	static _global = __PlaypenSystem();
 
