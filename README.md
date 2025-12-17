@@ -1,5 +1,6 @@
 # Playpen
 Smart safe whitelist system for GameMaker games with a disabled sandbox.
+This library has a couple core functions, and includes a bunch of generic helper functions for almost all file-related functions.
 
 ```
 PlaypenWhitelistAdd(filepath, [type]) - Adds a filepath to the whitelist, with a specified type as per PlaypenFlag enum.
