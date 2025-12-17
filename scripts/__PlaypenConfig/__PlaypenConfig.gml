@@ -17,5 +17,9 @@
  	- temp_directory
  	- program_directory
  	- game_save_id
+ 
+ 	When disabled, Playpen will only respect whatever is whitelisted, and will ignore relative paths.
+ 	Note: This does not apply to __PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR, and will need to be disabled for full on
+ 	control over the whitelist system.
 */
 #macro __PLAYPEN_DEFAULT_WHITELIST_INCLUDED true

@@ -33,7 +33,8 @@ function PlaypenIsWhitelisted(_path, _type) {
 			return true;
 		}
     	
-		if (string_pos("\\\\", _path) == 0) && (string_pos(":", _path) == 0) && (!string_starts_with("/", _path)) {
+		if (string_pos("\\\\", _path) == 0) && (string_pos(":", _path) == 0) && 
+			(!string_starts_with(_path, "/")) {
 			// Probably in "safe" save area or bundle area... Allow it.
 			return true;
 		}
