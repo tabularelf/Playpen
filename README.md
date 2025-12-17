@@ -7,7 +7,7 @@ PlaypenWhitelistAdd(filepath, [type]) - Adds a filepath to the whitelist, with a
 PlaypenWhitelistGetAll() - Returns an array of all filepaths in the whitelist
 PlaypenWhitelistClear() - Clears the whitelist
 PlaypenWhitelistRemove(filepath) - Removes a filepath from the whitelist
-PlaypenIsWhitelisted(filepath), type - Returns whether the filepath in question is apart of the whitelist or not, with the associated flag of choice.
+PlaypenIsWhitelisted(filepath, type) - Returns whether the filepath in question is apart of the whitelist or not, with the associated flag of choice.
 PlaypenWhitelistGetFlag(filepath) - Returns a flag if a path has been whitelisted. If there is no valid whitelist, it'll return PlaypenFlag.INVALID.
 ```
 
