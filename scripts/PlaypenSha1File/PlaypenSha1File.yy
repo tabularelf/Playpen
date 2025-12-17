@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"PlaypenSha1File",
   "parent":{
-    "name":"Playpen",
-    "path":"folders/Playpen.yy",
+    "name":"Helpers",
+    "path":"folders/Playpen/Helpers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
