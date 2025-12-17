@@ -2,11 +2,20 @@
 Smart safe whitelist system for GameMaker games with a disabled sandbox.
 
 ```
-PlaypenWhitelistAdd(filepath) - Adds a filepath to the whitelist
-PlaypenWhitelistGetAll() - Returns an array of all filepaths accepted
+PlaypenWhitelistAdd(filepath, [type]) - Adds a filepath to the whitelist, with a specified type as per PlaypenFlag enum.
+PlaypenWhitelistGetAll() - Returns an array of all filepaths in the whitelist
 PlaypenWhitelistClear() - Clears the whitelist
 PlaypenWhitelistRemove(filepath) - Removes a filepath from the whitelist
-PlaypenIsWhitelisted(filepath) - Returns whether the filepath in question is apart of the whitelist or not.
+PlaypenIsWhitelisted(filepath), type - Returns whether the filepath in question is apart of the whitelist or not, with the associated flag of choice.
+PlaypenWhitelistGetFlag(filepath) - Returns a flag if a path has been whitelisted. If there is no valid whitelist, it'll return PlaypenFlag.INVALID.
+```
+
+Flags:
+```gml
+PlaypenFlag.INVALID - Only used for whenever a flag is invalid. Cannot be used for searching or adding to the whitelist.
+PlaypenFlag.READ - Only allows reading
+PlaypenFlag.WRITE - Only allows writing
+PlaypenFlag.BOTH - Allows both reading and writing
 ```
 
 Example use:
