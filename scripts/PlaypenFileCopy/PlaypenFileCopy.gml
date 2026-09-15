@@ -22,7 +22,7 @@ function PlaypenFileCopy(_filepath, _newFilepath) {
 		__PlaypenTrace($"{nameof(PlaypenFileCopy)} - \"{_newFilepath}\" is not whitelisted!");
 	}
 
-	if (__PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR) {
+	if (PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR) {
 		__PlaypenTrace($"{nameof(PlaypenFileCopy)} - Attempting to copy from {working_directory + _filepath} to \"{game_save_id + _newFilepath}\".");
 		return __PlaypenFileCopy(
 			_filepathValidated ? _filepath : working_directory + _filepath, 

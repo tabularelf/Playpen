@@ -15,7 +15,7 @@ function PlaypenBufferLoadPartial(_buff, _filepath, _srcOffset, _srcLen, _destOf
 	}
 
 	__PlaypenTrace($"{nameof(PlaypenBufferLoadPartial)} - \"{_filepath}\" is not whitelisted!");
-	if (__PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR) {
+	if (PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR) {
 		__PlaypenTrace($"{nameof(PlaypenBufferLoadPartial)} - Attempting to load from save & bundle area.");
 		return buffer_load_partial(_buff, working_directory + _filepath, _srcOffset, _srcLen, _destOffset);
 	}

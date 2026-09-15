@@ -11,7 +11,7 @@ function PlaypenScreenSave(_filepath) {
 
 	__PlaypenTrace($"{nameof(PlaypenScreenSave)} - \"{_filepath}\" is not whitelisted!");
 
-	if (__PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR) {
+	if (PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR) {
 		__PlaypenTrace($"{nameof(PlaypenScreenSave)} - Attempting to save at \"{game_save_id + _filepath}\".");
 		return screen_save(game_save_id + _filepath);
 	}

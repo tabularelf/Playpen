@@ -11,7 +11,7 @@ function PlaypenMd5File(_filepath) {
 
 	__PlaypenTrace($"{nameof(PlaypenMd5File)} - \"{_filepath}\" is not whitelisted!");
 
-	if (__PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR) {
+	if (PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR) {
 		__PlaypenTrace($"{nameof(PlaypenMd5File)} - Attempting to hash from save & bundle area.");
 		return md5_file(working_directory + _filepath);
 	}

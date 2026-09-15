@@ -11,7 +11,7 @@ function PlaypenBufferLoad(_filepath) {
 
 	__PlaypenTrace($"{nameof(PlaypenBufferLoad)} - \"{_filepath}\" is not whitelisted!");
 
-	if (__PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR) {
+	if (PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR) {
 		__PlaypenTrace($"{nameof(PlaypenBufferLoad)} - Attempting to load from save & bundle area.");
 		return buffer_load(working_directory + _filepath);
 	}

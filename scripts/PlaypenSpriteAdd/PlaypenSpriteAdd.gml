@@ -16,7 +16,7 @@ function PlaypenSpriteAdd(_filepath, _imgNum, _removeBack, _smooth, _xorig, _yor
 
 	__PlaypenTrace($"{nameof(PlaypenSpriteAdd)} - \"{_filepath}\" is not whitelisted!");
 
-	if (__PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR) {
+	if (PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR) {
 		__PlaypenTrace($"{nameof(PlaypenSpriteAdd)} - Attempting to load from save & bundle area.");
 		return sprite_add(working_directory + _filepath, _imgNum, _removeBack, _smooth, _xorig, _yorig);
 	}

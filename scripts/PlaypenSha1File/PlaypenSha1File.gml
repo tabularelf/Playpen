@@ -11,7 +11,7 @@ function PlaypenSha1File(_filepath) {
 
 	__PlaypenTrace($"{nameof(PlaypenSha1File)} - \"{_filepath}\" is not whitelisted!");
 
-	if (__PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR) {
+	if (PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR) {
 		__PlaypenTrace($"{nameof(PlaypenSha1File)} - Attempting to hash from save & bundle area.");
 		return sha1_file(working_directory + _filepath);
 	}

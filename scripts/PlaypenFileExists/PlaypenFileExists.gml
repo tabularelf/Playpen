@@ -13,7 +13,7 @@ function PlaypenFileExists(_filepath) {
 
 	__PlaypenTrace($"{nameof(PlaypenFileExists)} - \"{_filepath}\" is not whitelisted!");
 
-	if (__PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR) {
+	if (PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR) {
 		__PlaypenTrace($"{nameof(PlaypenFileExists)} - Attempting to check save & bundle area.");
 		return file_exists(working_directory + _filepath);
 	}

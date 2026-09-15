@@ -22,7 +22,7 @@ function PlaypenZipUnzipAsync(_zipPath, _filepath) {
 		__PlaypenTrace($"{nameof(PlaypenZipUnzip)} - \"{_filepath}\" is not whitelisted!");
 	}
 
-	if (__PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR) {
+	if (PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR) {
 		__PlaypenTrace($"{nameof(PlaypenZipUnzip)} - Attempting to unzip from {working_directory + _zipPath} to \"{game_save_id + _filepath}\".");
 		return zip_unzip(
 			_filepathValidated ? _zipPath : working_directory + _zipPath, 

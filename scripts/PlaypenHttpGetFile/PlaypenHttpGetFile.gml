@@ -13,7 +13,7 @@ function PlaypenHttpGetFile(_url, _filepath) {
 
 	__PlaypenTrace($"{nameof(PlaypenHttpGetFile)} - \"{_filepath}\" is not whitelisted!");
 
-	if (__PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR) {
+	if (PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR) {
 		__PlaypenTrace($"{nameof(PlaypenHttpGetFile)} - Attempting to download at \"{game_save_id + _filepath}\".");
 		return http_get_file(_url, game_save_id + _filepath);
 	}

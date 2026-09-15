@@ -22,7 +22,7 @@ function PlaypenIsWhitelisted(_path, _type) {
 
 	_path = __PlaypenSanitise(_path);
 
-	if (__PLAYPEN_DEFAULT_WHITELIST_INCLUDED) {
+	if (PLAYPEN_DEFAULT_WHITELIST_INCLUDED) {
 		// These are always allowed
 		if (string_starts_with(_path, game_save_id) ||
 			string_starts_with(_path, working_directory) || 
