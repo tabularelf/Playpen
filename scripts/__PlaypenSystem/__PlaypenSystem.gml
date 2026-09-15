@@ -22,3 +22,15 @@ function __PlaypenSystem() {
 }
 
 __PlaypenTrace($"{__PLAYPEN_VERSION} initialised! Created by {__PLAYPEN_CREDITS}. Last updated on {__PLAYPEN_DATE}");
+
+#export PLAYPEN_DEFAULT_FILESYSTEM_GM_BEHAVIOUR, PLAYPEN_DEFAULT_WHITELIST_INCLUDED, PlaypenFlag
+
+#export PlaypenBufferLoad, PlaypenBufferLoadAsync, PlaypenBufferLoadExt, PlaypenBufferLoadPartial
+#export PlaypenBufferSave, PlaypenBufferSaveAsync, PlaypenBufferSaveExt, PlaypenDirectoryCreate
+#export PlaypenDirectoryDestroy, PlaypenDirectoryExists, PlaypenFileAttribute, PlaypenFileCopy
+#export PlaypenFileDelete, PlaypenFileExists, PlaypenFileFindClose, PlaypenFileFindFirst
+#export PlaypenFileFindNext, PlaypenFileRename, PlaypenHttpGetFile, PlaypenIsWhitelisted
+#export PlaypenMd5File, PlaypenScreenSave, PlaypenSha1File, PlaypenSpriteAdd, PlaypenSpriteAddExt
+#export PlaypenSpriteSave, PlaypenSurfaceSave, PlaypenWhitelistAdd, PlaypenWhitelistClear
+#export PlaypenWhitelistGetAll, PlaypenWhitelistGetFlag, PlaypenWhitelistRemove, PlaypenZipUnzip
+#export PlaypenZipUnzipAsync
