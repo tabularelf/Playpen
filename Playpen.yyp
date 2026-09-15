@@ -22,11 +22,12 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.0.0.16",
+    "IDEVersion":"2026.100.0.1149",
   },
   "name":"Playpen",
   "resources":[
     {"id":{"name":"obj_test","path":"objects/obj_test/obj_test.yy",},},
+    {"id":{"name":"rm_blank","path":"rooms/rm_blank/rm_blank.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"__PlaypenConfig","path":"scripts/__PlaypenConfig/__PlaypenConfig.yy",},},
     {"id":{"name":"__PlaypenDirectoryCreate","path":"scripts/__PlaypenDirectoryCreate/__PlaypenDirectoryCreate.yy",},},
@@ -77,6 +78,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_blank","path":"rooms/rm_blank/rm_blank.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
