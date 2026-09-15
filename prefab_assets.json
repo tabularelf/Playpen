@@ -1,4 +1,196 @@
 {
   "Version": "1.0",
-  "assets": []
+  "assets": [
+    {
+      "export": 2,
+      "name": "datafiles/playpen_license.txt",
+      "deps": [
+        "__PlaypenSystem"
+      ]
+    },
+    {
+      "export": 1,
+      "name": "__PlaypenDirectoryCreate"
+    },
+    {
+      "export": 1,
+      "name": "__PlaypenError"
+    },
+    {
+      "export": 1,
+      "name": "__PlaypenFileCopy"
+    },
+    {
+      "export": 1,
+      "name": "__PlaypenFileDelete"
+    },
+    {
+      "export": 1,
+      "name": "__PlaypenFileRename"
+    },
+    {
+      "export": 1,
+      "name": "__PlaypenSanitise"
+    },
+    {
+      "export": 1,
+      "name": "__PlaypenSystem"
+    },
+    {
+      "export": 1,
+      "name": "__PlaypenTrace"
+    },
+    {
+      "export": 1,
+      "name": "__PlaypenTypeValidation"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenBufferLoad"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenBufferLoadAsync"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenBufferLoadExt"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenBufferLoadPartial"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenBufferSave"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenBufferSaveAsync"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenBufferSaveExt"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenDirectoryCreate"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenDirectoryDestroy"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenDirectoryExists"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenFileAttributes"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenFileCopy"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenFileDelete"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenFileExists"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenFileFindClose"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenFileFindFirst"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenFileFindNext"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenFileRename"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenHttpGetFile"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenMd5File"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenScreenSave"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenSha1File"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenSpriteAdd"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenSpriteAddExt"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenSpriteSave"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenSurfaceSave"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenZipUnzip"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenZipUnzipAsync"
+    },
+    {
+      "export": 1,
+      "name": "__PlaypenConfig"
+    },
+    {
+      "export": 2,
+      "name": "Playpen Readme"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenIsWhitelisted"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenWhitelistAdd"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenWhitelistClear"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenWhitelistGetAll"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenWhitelistGetFlag"
+    },
+    {
+      "export": 1,
+      "name": "PlaypenWhitelistRemove"
+    },
+    {
+      "export": 1,
+      "name": "rm_blank"
+    }
+  ]
 }
